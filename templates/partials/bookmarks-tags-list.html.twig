@@ -1,0 +1,12 @@
+{% set tags_list = bookmarks.tags %}
+
+<span class="tags">
+{% for t in tags_list|sort_by_key('name_lc') %}
+    <a href="{{ page.url }}/{{ bookmarks.uri_param }}{{ config.system.param_sep }}{{ t.name }}">
+        {{ t.name }}
+        &nbsp;
+        <sup>{{ t.count }}</sup>
+    </a>
+{% endfor %}
+<a href="{{ page.url }}" title="erase filters">X</a>
+</span>

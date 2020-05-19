@@ -1,0 +1,21 @@
+enabled: true
+text_var: Custom Text added by the **Bookmarks** plugin (disable plugin to remove)
+# errors in BookmarksList class break all (true) or continue (false)
+fatal_error: true
+# uri param name to select the item tag
+# we can use 'and' or 'or' operator to filter by tag
+filter:
+    uri_param: bmtag
+    operator: or
+# if we want a fixed filter on the links set since the start
+starting_filter:
+    tag: []
+    operator: or
+# sorting key components for links item
+sorting_key:
+    - title
+    - url
+# examples file to import
+imports:
+    - 'user://data/bookmarks/file1.yaml'
+    - 'user://data/bookmarks/file2.yaml'
