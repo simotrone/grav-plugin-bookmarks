@@ -10,11 +10,7 @@ Installing the Bookmarks plugin can be done in one of three ways: The GPM (Grav 
 
 ### GPM Installation (Preferred)
 
-To install the plugin via the [GPM](http://learn.getgrav.org/advanced/grav-gpm), through your system's terminal (also called the command line), navigate to the root of your Grav-installation, and enter:
-
-    bin/gpm install bookmarks
-
-This will install the Bookmarks plugin into your `/user/plugins`-directory within Grav. Its files can be found under `/your/site/grav/user/plugins/bookmarks`.
+I'm not on GPM, at the moment.
 
 ### Manual Installation
 
