@@ -1,0 +1,21 @@
+<ul>
+    {% for l in links_list|sort_by_key('sorting_key') %}
+    <li>
+        <a class="external" href="{{ l.url }}">{{ l.title|default(l.url) }}</a>
+
+        {% if l.tag %}
+            &nbsp;
+            <span class="tags">
+            {% for t in l.tag|sort %}
+            <a class="{{ tag_class }}" href="{{ page.url }}/{{ bookmarks.uri_param }}{{ config.system.param_sep }}{{ t }}">{{ t }}</a>
+            {% endfor %}
+            </span>
+        {% endif %}
+
+        {% if l.description %}
+            </br>
+            <span>{{ l.description }}</span>
+        {% endif %}
+    </li>
+    {% endfor %}
+</ul>
