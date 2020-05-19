@@ -14,13 +14,20 @@ I'm not on GPM, at the moment.
 
 ### Manual Installation
 
-To install the plugin manually, download the zip-version of this repository and unzip it under `/your/site/grav/user/plugins`. Then rename the folder to `bookmarks`. You can find these files on [GitHub](https://github.com//grav-plugin-bookmarks) or via [GetGrav.org](http://getgrav.org/downloads/plugins#extras).
+To install the plugin manually, download the zip-version of this repository and
+unzip it under `/your/site/grav/user/plugins`. Then rename the folder to
+`bookmarks`.
+You can find these files on
+[GitHub](https://github.com/simotrone/grav-plugin-bookmarks) or via
+[GetGrav.org](http://getgrav.org/downloads/plugins#extras).
 
 You should now have all the plugin files under
 
     /your/site/grav/user/plugins/bookmarks
 	
-> NOTE: This plugin is a modular component for Grav which may require other plugins to operate, please see its [blueprints.yaml-file on GitHub](https://github.com//grav-plugin-bookmarks/blob/master/blueprints.yaml).
+> NOTE: This plugin is a modular component for Grav which may require other
+> plugins to operate, please see its
+> [blueprints.yaml-file on GitHub](https://github.com/simotrone/grav-plugin-bookmarks/blob/master/blueprints.yaml).
 
 ### Admin Plugin
 
@@ -86,7 +93,7 @@ Write your links in YAML file following this scheme:
 - url: *mandatory
   title: an url title
   description: the url description
-  tag [ wow, awesome, url ]
+  tag: [ wow, awesome, url ]
 ```
 
 put them in a file as `user/data/bookmarks/astro.yaml` and insert the filepath
