@@ -119,6 +119,13 @@ Example:
   description: The best telescope in the world! :-)
 ```
 
+It is possibile to provide the css class for bookmarks tag in theme
+configuration.
+In the following example the style follows the spectre.css from quark.
+```yaml
+bookmarks-tags-class: label label-rounded label-secondary
+```
+
 ## Credits
 
 My job, my faults.
